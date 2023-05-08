@@ -1,12 +1,14 @@
-<div>
-  <h1>Healthy Habits Tracker</h1>
-  <app-habit-card
-    *ngFor="let habit of habits"
-    [habit]="habit"
-    
-  ></app-habit-card>
+<div style="background-color: white">
+  <header style="background-color: orange">
+    <h1>Healthy Habits Tracker</h1>
+  </header>
+  <app-habit-card *ngFor="let habit of habits" [habit]="habit"></app-habit-card>
 
   <input type="text" id="title" #habitTitle>
   <input type="number" id="total" #habitTotal>
   <button (click)="addHabit(habitTitle.value, habitTotal.valueAsNumber)">Add Habit</button>
+
+  <footer style="background-color: orange">
+    <!-- Footer content goes here -->
+  </footer>
 </div>

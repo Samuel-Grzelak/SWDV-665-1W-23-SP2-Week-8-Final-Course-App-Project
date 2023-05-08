@@ -2,7 +2,7 @@
   <ion-card-header>
     <ion-card-title>{{ habit.title }}</ion-card-title>
   </ion-card-header>
-  <ion-card-content>
+  <ion-card-content style="background-color: #9f9f9f; color:black">
     <p>Remaining: {{ habit.remaining }} times</p>
     <ion-progress-bar [value]="calculateProgress()"></ion-progress-bar>
   </ion-card-content>
