@@ -1,0 +1,17 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>{{ habit.title }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>Remaining: {{ habit.remaining }} times</p>
+    <ion-progress-bar [value]="calculateProgress()"></ion-progress-bar>
+  </ion-card-content>
+  <ion-row>
+    <ion-col>
+      <ion-button color="danger" (click)="deleteHabit()">Delete</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button color="primary" (click)="editHabit()">Edit</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-card>

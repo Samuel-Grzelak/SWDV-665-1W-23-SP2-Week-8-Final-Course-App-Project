@@ -1,0 +1,13 @@
+// Replace the existing content with the following:
+$colors: (
+  primary: #FFA500,
+  secondary: #808080
+);
+
+ion-card {
+  background-color: #808080;
+}
+
+ion-progress-bar {
+  --bar-background: #FFA500;
+}

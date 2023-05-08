@@ -1,0 +1,12 @@
+<div>
+  <h1>Healthy Habits Tracker</h1>
+  <app-habit-card
+    *ngFor="let habit of habits"
+    [habit]="habit"
+    
+  ></app-habit-card>
+
+  <input type="text" id="title" #habitTitle>
+  <input type="number" id="total" #habitTotal>
+  <button (click)="addHabit(habitTitle.value, habitTotal.valueAsNumber)">Add Habit</button>
+</div>

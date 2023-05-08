@@ -1,0 +1,8 @@
+{
+  "name": "healthy-habits",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}
